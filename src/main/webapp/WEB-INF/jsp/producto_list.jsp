@@ -7,7 +7,7 @@
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
- <title>Article List</title>
+ <title>Product List</title>
  <link href="../../webjars/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
  <script src="../../webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
  <script src="../../webjars/jquery/3.0.0/js/jquery.min.js"></script>
@@ -25,7 +25,7 @@
     <th scope="row">Delete</th>
    </thead>
    <tbody>
-    <c:forEach items="${articleList }" var="producto" >
+    <c:forEach items="${productoList }" var="producto" >
      <tr>
       <td>${producto.id }</td>
       <td>${producto.nombre_producto }</td>
@@ -43,8 +43,8 @@
     </c:forEach>
    </tbody>
   </table>
-  <spring:url value="/article/addArticle/" var="addURL" />
-  <a class="btn btn-primary" href="${addURL }" role="button" >Add New Article</a>
+  <spring:url value="/producto/addProducto/" var="addURL" />
+  <a class="btn btn-primary" href="${addURL }" role="button" >Agregar nuevo producto</a>
  </div>
 </body>
 </html>
